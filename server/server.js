@@ -94,6 +94,4 @@ io.on('connection', function(socket){
 
 });
 
-http.listen(port, function() {
-  console.log('listening on *:'+port);
-});
+http.listen(port, () => console.log(`listening on PORT ${port}`) );
